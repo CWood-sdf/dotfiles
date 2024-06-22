@@ -51,8 +51,8 @@ bindsym XF86AudioMute exec --no-startup-id amixer -D pulse sset Master toggle &&
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 
-bindsym $mod+Shift+greater move container to output right
-bindsym $mod+Shift+less move container to output left
+bindsym $mod+Shift+greater move workspace to output right
+bindsym $mod+Shift+less move workspace to output left
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
