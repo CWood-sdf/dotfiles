@@ -115,3 +115,4 @@ elif [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
 
+export PATH="$PATH:~/.local/share/bob/nvim-bin"
