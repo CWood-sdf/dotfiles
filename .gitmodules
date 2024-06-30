@@ -3,7 +3,7 @@
 	url = https://github.com/CWood-sdf/nvim.git
 [submodule "alacritty/.config/alacritty"]
 	path = alacritty/.config/alacritty
-	url = https://github.com/CWood-sdf/alacritty
+	url = https://github.com/CWood-sdf/alacritty.git
 [submodule "tmux/.config/tmux"]
 	path = tmux/.config/tmux
 	url = https://github.com/CWood-sdf/tmux.git
