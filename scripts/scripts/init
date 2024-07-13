@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cd ~/dotfiles/scripts/scripts
+
+ls | xargs chmod a+x
+
+cd -
