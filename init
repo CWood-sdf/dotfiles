@@ -1,0 +1,11 @@
+#!/bin/bash
+
+ls -d */ | sed "s/\///" | xargs stow --ignore='^init'
+
+pacman -S --needed git base-devel
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+cd ..
+rm yay -rf
+
