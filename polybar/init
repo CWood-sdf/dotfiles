@@ -1,0 +1,5 @@
+#!/bin/bash
+
+sudo pacman -S polybar
+
+chmod a+x ~/.config/polybar/launch_polybar.sh

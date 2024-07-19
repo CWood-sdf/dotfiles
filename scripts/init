@@ -5,3 +5,5 @@ cd ~/dotfiles/scripts/scripts
 ls | xargs chmod a+x
 
 cd -
+
+sudo pacman -S scrot

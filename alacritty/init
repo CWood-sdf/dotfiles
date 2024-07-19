@@ -1,2 +1,4 @@
 #!/bin/bash
 sudo pacman -S alacritty
+
+git clone https://github.com/CWood-sdf/alacritty ~/.config/alacritty

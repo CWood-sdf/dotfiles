@@ -1,0 +1,10 @@
+#!/bin/bash
+
+cd $1
+
+chmod a+x init
+
+cd ..
+
+$("./$1/init")
+
