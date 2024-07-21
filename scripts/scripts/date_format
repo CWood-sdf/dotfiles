@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo "%b %d, $(~/scripts/time_format)"

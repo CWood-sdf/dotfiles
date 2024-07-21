@@ -17,3 +17,5 @@ sudo pacman -S pulseaudio
 sudo pacman -S dmenu
 
 yay -S betterlockscreen
+
+betterlockscreen -u ~/.config/feh/wall1.jpg --span

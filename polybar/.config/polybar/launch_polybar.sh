@@ -1,3 +1,4 @@
+export TIME_FORMAT="$(~/scripts/date_format)"
 if type "xrandr"; then
     for m in $(polybar --list-monitors | cut -d":" -f1); do
         export MONITOR=$m

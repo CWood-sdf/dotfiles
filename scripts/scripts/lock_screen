@@ -1,0 +1,7 @@
+#!/bin/bash
+
+format=$(~/scripts/time_format)
+
+echo $format
+
+betterlockscreen -l blur --time-format "$format" --span
