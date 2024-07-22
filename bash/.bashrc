@@ -2,6 +2,8 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+source /etc/profile
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -117,4 +119,12 @@ fi
 
 export PATH="$PATH:~/.local/share/bob/nvim-bin:~/.cargo/bin:~/scripts"
 
+
+
 # neofetch
+
+PATH="/home/christopher-wood/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/home/christopher-wood/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/home/christopher-wood/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/home/christopher-wood/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/christopher-wood/perl5"; export PERL_MM_OPT;
