@@ -17,3 +17,7 @@ sleep 30
 sudo vim /etc/mkinitcpio.conf
 
 sudo mkinitcpio -P
+
+sudo systemctl enable snapper-cleanup.timer
+
+sudo systemctl start snapper-cleanup.timer

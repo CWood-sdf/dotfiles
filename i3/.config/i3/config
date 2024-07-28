@@ -30,13 +30,13 @@ exec --no-startup-id ~/.screenlayout/horizontal-vertical.sh
       # indicator: The color used to indicate where a new view will open. In a tiled container, this would paint the right border of the current view if a new view would be opened to the right.
       # child_border: The border around the view itself.
     # The default colors are:
-      # class	    border	background	text  indicator	child_border			
-      # background	n/a	  #ffffff   n/a	  n/a	    n/a
-      # focused	  #4c7899	#285577	  #ffffff	#2e9ef4	  #285577
-      # focused_inactive	#333333	#5f676a	#ffffff	#484e50	  #5f676a
-      # unfocused	  #333333	#222222	  #888888	#292d2e	  #222222
-      # urgent	  #2f343a	#900000	  #ffffff	#900000	  #900000
-      # placeholder	#000000	#0c0c0c	  #ffffff	#000000 	#0c0c0c
+      # class	          border	background   text      indicator	child_border			
+      # background        n/a	        #ffffff   n/a	        n/a	        n/a
+      # focused	         #4c7899	#285577	  #ffffff	#2e9ef4	        #285577
+      # focused_inactive #333333	#5f676a	  #ffffff	#484e50	        #5f676a
+      # unfocused        #333333	#222222	  #888888	#292d2e	        #222222
+      # urgent	         #2f343a	#900000	  #ffffff	#900000	        #900000
+      # placeholder	 #000000	#0c0c0c	  #ffffff	#000000 	#0c0c0c
 
 client.focused           #54557e #2c4078 #c0caf5 #9aa5ce   #9aa5ce
 client.focused_inactive  #16161d #343459 #c0caf5 #16161d   #16161d
