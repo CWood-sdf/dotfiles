@@ -1,4 +1,7 @@
 #!/bin/bash
 
 sudo pacman -S tmux
+sudo pacman -S xclip
 git clone https://github.com/CWood-sdf/tmux ~/.config/tmux
+
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm

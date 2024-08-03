@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/bin/sh
 
-format=$(~/scripts/time_format)
+format=$($HOME/scripts/time_format)
 
 echo $format
 
