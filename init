@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo pacman -S stow
+
 ls -d */ | sed "s/\///" | xargs stow --ignore='^init'
 
 

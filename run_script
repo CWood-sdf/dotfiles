@@ -3,6 +3,7 @@
 cd $1
 
 chmod a+x init
+stow $1
 
 cd ..
 
