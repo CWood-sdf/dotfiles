@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "Setting brightness on all displays to $1"
+
+xrandr | grep " connected" | sed "s/\(\S*\) .*/\1/" | xargs -I{} xrandr --output {} --brightness $1

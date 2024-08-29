@@ -2,7 +2,7 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-source /etc/profile
+# source /etc/profile
 
 # If not running interactively, don't do anything
 case $- in
@@ -33,14 +33,16 @@ shopt -s checkwinsize
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
 # set variable identifying the chroot you work in (used in the prompt below)
-if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
-    debian_chroot=$(cat /etc/debian_chroot)
-fi
+# if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
+#     debian_chroot=$(cat /etc/debian_chroot)
+# fi
 
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
     xterm-color|*-256color) color_prompt=yes ;;
 esac
+
+color_prompt=yes
 
 # uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
@@ -117,14 +119,17 @@ elif [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
 
-export PATH="$PATH:~/.local/share/bob/nvim-bin:~/.cargo/bin:~/scripts"
+export PATH="~/.local/share/bob/nvim-bin:$PATH:~/.cargo/bin:~/scripts"
 
 
 
 # neofetch
 
-PATH="/home/christopher-wood/perl5/bin${PATH:+:${PATH}}"; export PATH;
 PERL5LIB="/home/christopher-wood/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
 PERL_LOCAL_LIB_ROOT="/home/christopher-wood/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
 PERL_MB_OPT="--install_base \"/home/christopher-wood/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/home/christopher-wood/perl5"; export PERL_MM_OPT;
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

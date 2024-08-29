@@ -1,21 +1,7 @@
 #!/bin/bash
 
-sudo pacman -S i3
-
-sudo pacman -S xorg
-
-sudo pacman -S arandr
-
+echo " i3 xorg arandr nerd-fonts network-manager-applet pulseaudio dmenu betterlockscreen " >> ~/install.txt
 arandr
 
-sudo pacman -S nerd-fonts
-
-sudo pacman -S network-manager-applet
-
-sudo pacman -S pulseaudio
-
-sudo pacman -S dmenu
-
-yay -S betterlockscreen
 
 betterlockscreen -u ~/.config/feh/wall1.jpg --span

@@ -8,4 +8,4 @@ ls | xargs -I{} sudo ln -s {} /usr/bin/{}
 
 cd -
 
-sudo pacman -S scrot
+sudo pacman -S scrot maim

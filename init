@@ -1,6 +1,5 @@
 #!/bin/bash
 
-sudo pacman -S stow
 
 ls -d */ | sed "s/\///" | xargs stow --ignore='^init'
 
@@ -15,6 +14,8 @@ rm yay -rf
 chmod a+x ./run_script
 
 ls -d */ | sed "s/\///" | xargs -I{} ./run_script {}
+
+sudo pacman -S stow
 
 chmod +x ./snapper_init
 

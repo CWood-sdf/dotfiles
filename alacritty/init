@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo pacman -S alacritty
-sudo pacman -S nerd-fonts
+
+echo " alacritty nerd-fonts" >> ~/install.txt
 
 git clone https://github.com/CWood-sdf/alacritty ~/.config/alacritty

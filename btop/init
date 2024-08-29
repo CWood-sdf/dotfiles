@@ -1,5 +1,5 @@
 #!/bin/bash
 
-sudo pacman -S btop
+echo " btop" >> ~/install.txt
 
 git clone https://github.com/CWood-sdf/btop ~/.config/btop

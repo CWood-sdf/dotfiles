@@ -14,6 +14,7 @@ set $mod Mod1
 for_window [class="^.*"] border pixel 1
 
 exec --no-startup-id ~/.screenlayout/horizontal-vertical.sh
+exec --no-startup-id /usr/lib/gsd-xsettings
 
 # Set colours various window states
     # Syntax: client.<class> <border> <background> <text> [<indicator> [<child_border>]]
@@ -84,6 +85,8 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 bindsym $mod+Shift+greater move workspace to output right
 bindsym $mod+Shift+less move workspace to output left
 
+bindsym $mod+Shift+s exec --no-startup-id maim -s -o /home/christopher-wood/Pictures/Screenshots/capture.png
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
@@ -92,7 +95,7 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec ghostty
 
 # kill focused window
 bindsym $mod+Shift+q kill
