@@ -1,6 +1,5 @@
 #!/bin/bash
 
-arandr
-
+arandr &
 
 betterlockscreen -u ~/.config/feh/wall1.jpg --span
