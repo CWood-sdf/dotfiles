@@ -1,22 +1,21 @@
 #!/bin/bash
 
-
-ls -d */ | sed "s/\///" | xargs stow --ignore='^init'
-
-
-sudo pacman -S --needed git base-devel
+sudo pacman -S --needed git base-devel stow
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 cd ..
 rm yay -rf
 
-chmod a+x ./run_script
+chmod a+x ./run_init
 
-ls -d */ | sed "s/\///" | xargs -I{} ./run_script {}
+chmod a+x ./install
 
-sudo pacman -S stow
+./install .
 
-chmod +x ./snapper_init
+ls -d */ | sed "s/\///" | xargs -I{} ./install {}
 
-./snapper_init
+ls -d */ | grep '^[^_]' | sed "s/\///" | xargs stow --ignore='^init|^pkg.txt'
+
+ls -d */ | sed "s/\///" | xargs -I{} ./run_init {}
+

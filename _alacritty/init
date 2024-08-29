@@ -1,5 +1,3 @@
 #!/bin/bash
 
-echo " alacritty nerd-fonts" >> ~/install.txt
-
 git clone https://github.com/CWood-sdf/alacritty ~/.config/alacritty

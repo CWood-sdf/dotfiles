@@ -1,0 +1,1 @@
+snapper vim snap-pac grub-btrfs cups cups-browsed

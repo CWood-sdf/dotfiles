@@ -1,6 +1,5 @@
 #!/bin/bash
 
-echo " i3 xorg arandr nerd-fonts network-manager-applet pulseaudio dmenu betterlockscreen " >> ~/install.txt
 arandr
 
 

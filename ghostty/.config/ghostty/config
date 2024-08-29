@@ -1,0 +1,40 @@
+# background = 0a0a13
+# foreground = a9b1d6
+
+font-family = Hack Nerd Font
+
+shell-integration = bash
+
+theme = tokyonight
+
+gtk-titlebar = false
+
+keybind = ctrl+d=new_split:right
+
+# palette = 0=#1d2021
+# palette = 8=#7c6f64
+# # red
+# palette = 1=#f7768e
+# palette = 9=#fb4934
+# # green
+# palette = 2=#26a269
+# palette = 10=#b8bb26
+# # yellow
+# palette = 3=#d79921
+# palette = 11=#fabd2f
+# # blue
+# palette = 4=#12488b
+# palette = 12=#83a598
+# # purple
+# palette = 5=#b16286
+# palette = 13=#d3869b
+# # aqua
+# palette = 6=#9ac57e
+# palette = 14=#8ec07c
+# # white
+# palette = 7=#ff00ff
+# palette = 15=#ff00ff
+
+window-padding-color = extend
+
+confirm-close-surface = false

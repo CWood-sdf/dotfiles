@@ -1,18 +1,12 @@
 #!/bin/bash
 
-sudo pacman -S snapper
-
 sudo snapper -c root create-config /
 
 sudo snapper -c home create-config /home
 
-sudo pacman -S snap-pac grub-btrfs
+echo "ADD grub-btrfs-overlayfs TO END OF HOOKS ARRAY IN /etc/mkinitcpio.conf (waiting 20s so you can read this)"
 
-sudo pacman -S vim
-
-echo "ADD grub-btrfs-overlayfs TO END OF HOOKS ARRAY IN /etc/mkinitcpio.conf"
-
-sleep 30
+sleep 20
 
 sudo vim /etc/mkinitcpio.conf
 
