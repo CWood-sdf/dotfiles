@@ -1,1 +1,1 @@
-i3 xorg arandr nerd-fonts network-manager-applet pulseaudio dmenu betterlockscreen
+i3-wm i3blocks i3status xorg arandr nerd-fonts network-manager-applet pulseaudio dmenu betterlockscreen xorg-utils xorg-server xterm
