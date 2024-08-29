@@ -12,6 +12,8 @@ chmod a+x ./install
 
 ./install .
 
+rm ~/.bashrc
+
 ls -d */ | sed "s/\///" | xargs -I{} ./install {}
 
 ls -d */ | grep '^[^_]' | sed "s/\///" | xargs stow --ignore='^init|^pkg.txt'
