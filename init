@@ -16,7 +16,7 @@ rm ~/.bashrc
 
 ls -d */ | sed "s/\///" | xargs -I{} ./install {}
 
-ls -d */ | grep '^[^_]' | sed "s/\///" | xargs stow --ignore='^init|^pkg.txt'
+ls -d */ | grep '^[^_]' | sed "s/\///" | xargs -I{} stow {} --ignore='^(init|pkg.txt)'
 
 ls -d */ | sed "s/\///" | xargs -I{} ./run_init {}
 
