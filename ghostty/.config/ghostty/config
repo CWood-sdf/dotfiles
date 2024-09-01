@@ -9,7 +9,7 @@ theme = tokyonight
 
 gtk-titlebar = false
 
-keybind = ctrl+d=new_split:right
+# keybind = ctrl+d=new_split:right
 
 # palette = 0=#1d2021
 # palette = 8=#7c6f64

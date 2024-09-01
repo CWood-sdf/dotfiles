@@ -4,6 +4,8 @@ cd ~/dotfiles/scripts/scripts
 
 ls | xargs chmod a+x
 
-ls | xargs -I{} sudo ln -s {} /usr/bin/{}
+ls | xargs -I{} echo ./{}
+
+ls | xargs -I{} sudo ln -s $PWD/{} /usr/bin/{} -f
 
 cd -
