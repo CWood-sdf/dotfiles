@@ -1,5 +1,7 @@
 #!/bin/bash
 
+
+
 sudo snapper -c root create-config /
 
 sudo snapper -c home create-config /home
