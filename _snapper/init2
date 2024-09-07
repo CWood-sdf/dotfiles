@@ -12,6 +12,8 @@
 # sudo mkdir /.snapshots
 # sudo mount -t btrfs -o subvol=@.snapshots /dev/... /.snapshots
 #
+# ALSO NEED TO EDIT FSTAB?
+#
 # else
 #
 # sudo snapper -c root create-config /
@@ -32,3 +34,9 @@
 # sudo systemctl enable snapper-cleanup.timer
 #
 # sudo systemctl start snapper-cleanup.timer
+#
+# sudo systemctl enable grub-btrfsd
+# sudo systemctl start grub-btrfsd
+#
+# sudo /etc/grub.d/41_snapshots-btrfs
+# sudo grub-mkconfig -o /boot/grub/grub.cfg
