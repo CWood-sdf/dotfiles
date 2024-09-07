@@ -2,7 +2,22 @@
 #
 #
 #
+# if [ -d "/.snapshots" ]
+# then
+#
+# sudo umount /.snapshots
+# sudo rm /.snapshots -rf
 # sudo snapper -c root create-config /
+# sudo btrfs subvolume delete /.snapshots
+# sudo mkdir /.snapshots
+# sudo mount -t btrfs -o subvol=@.snapshots /dev/... /.snapshots
+#
+# else
+#
+# sudo snapper -c root create-config /
+#
+# fi
+#
 #
 # sudo snapper -c home create-config /home
 #
