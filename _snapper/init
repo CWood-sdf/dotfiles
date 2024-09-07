@@ -1,19 +1,19 @@
 #!/bin/bash
-
-
-
-sudo snapper -c root create-config /
-
-sudo snapper -c home create-config /home
-
-echo "ADD grub-btrfs-overlayfs TO END OF HOOKS ARRAY IN /etc/mkinitcpio.conf"
-
-read "press enter to continue..."
-
-sudo vim /etc/mkinitcpio.conf
-
-sudo mkinitcpio -P
-
-sudo systemctl enable snapper-cleanup.timer
-
-sudo systemctl start snapper-cleanup.timer
+#
+#
+#
+# sudo snapper -c root create-config /
+#
+# sudo snapper -c home create-config /home
+#
+# echo "ADD grub-btrfs-overlayfs TO END OF HOOKS ARRAY IN /etc/mkinitcpio.conf"
+#
+# read "press enter to continue..."
+#
+# sudo vim /etc/mkinitcpio.conf
+#
+# sudo mkinitcpio -P
+#
+# sudo systemctl enable snapper-cleanup.timer
+#
+# sudo systemctl start snapper-cleanup.timer
