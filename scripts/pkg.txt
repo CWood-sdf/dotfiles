@@ -1,1 +1,1 @@
-scrot maim firefox
+scrot maim firefox rustup cargo

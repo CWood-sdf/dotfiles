@@ -16,6 +16,8 @@ rm ~/.bashrc
 
 ls -d */ | sed "s/\///" | xargs -I{} ./install {}
 
+rustup default stable
+
 ls -d */ | grep '^[^_]' | sed "s/\///" | xargs -I{} stow {} --ignore='^(init|pkg.txt)'
 
 ls -d */ | sed "s/\///" | xargs -I{} ./run_init {}
