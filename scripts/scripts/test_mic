@@ -1,0 +1,3 @@
+#!/bin/bash
+
+arecord -d 2 -vvv -f dat /dev/null

@@ -8,4 +8,6 @@ ls | xargs -I{} echo ./{}
 
 ls | xargs -I{} sudo ln -s $PWD/{} /usr/bin/{} -f
 
+rustup default stable
+
 cd -
