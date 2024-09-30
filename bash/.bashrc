@@ -4,6 +4,8 @@
 
 # source /etc/profile
 
+set -o vi
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -133,3 +135,8 @@ PERL_MM_OPT="INSTALL_BASE=/home/christopher-wood/perl5"; export PERL_MM_OPT;
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# export PS1="\e[6 q\2"
+# export PS0="\e[2 q\2"
+
+eval "$(thefuck --alias)"
