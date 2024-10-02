@@ -230,6 +230,19 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+bindsym $mod+i mode "launch"
+mode "launch" {
+        # These bindings trigger as soon as you enter the resize mode
+
+        bindsym f exec --no-startup-id firefox ; mode "default"
+        bindsym d exec --no-startup-id discord ; mode "default"
+
+        # back to normal: Enter or Escape or $mod+r
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+        bindsym $mod+r mode "default"
+}
+
 bindsym $mod+shift+x exec --no-startup-id ~/scripts/lock_screen
 
 # Start i3bar to display a workspace bar (plus the system information i3status
