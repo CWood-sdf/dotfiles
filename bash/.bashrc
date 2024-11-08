@@ -140,3 +140,5 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # export PS0="\e[2 q\2"
 
 eval "$(thefuck --alias)"
+
+[ -f "/home/christopher-wood/.ghcup/env" ] && . "/home/christopher-wood/.ghcup/env" # ghcup-env
