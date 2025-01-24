@@ -1,0 +1,3 @@
+#!/bin/bash
+
+scrot -s -o "$HOME/Pictures/Screenshots/maim-$(date +'%Y_%m_%d-%I_%M').jpg"

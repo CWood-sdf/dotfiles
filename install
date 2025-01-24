@@ -2,4 +2,4 @@
 
 cat $1/pkg.txt || "No pkg.txt manifest found in folder $1"
 
-cat $1/pkg.txt | sed "s/ /\n/g" | xargs -I{} yay -S {} --noconfirm
+cat $1/pkg.txt | sed "s/ /\n/g" | xargs -I{} yay -S {} --noconfirm --needed

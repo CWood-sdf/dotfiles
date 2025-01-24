@@ -141,4 +141,8 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 eval "$(thefuck --alias)"
 
-[ -f "/home/christopher-wood/.ghcup/env" ] && . "/home/christopher-wood/.ghcup/env" # ghcup-env
+alias ardu=arduino-cli
+
+[ -f "/home/christopher-wood/.ghcup/env" ] && . "/home/christopher-wood/.ghcup/env" # ghcup-envexport LD_LIBRARY_PATH=/home/christopher-wood/.local/lib/arch-mojo:$LD_LIBRARY_PATH
+
+alias ts=tree-sitter

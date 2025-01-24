@@ -1,0 +1,2 @@
+discord/.config/discord/*
+!discord/.config/discord/settings.json

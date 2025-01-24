@@ -6,6 +6,10 @@ chmod a+x ./install_yay
 
 yay --version || ./install_yay
 
+yay -S rustup
+
+rustup default stable
+
 chmod a+x ./run_init
 
 chmod a+x ./install

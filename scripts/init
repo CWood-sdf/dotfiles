@@ -2,6 +2,10 @@
 
 cd ~/dotfiles/scripts/scripts
 
+rm ./init_bak || echo "no init backup found"
+
+cp /sbin/init ./init_bak
+
 ls | xargs chmod a+x
 
 ls | xargs -I{} echo ./{}
@@ -9,5 +13,7 @@ ls | xargs -I{} echo ./{}
 ls | xargs -I{} sudo ln -s $PWD/{} /usr/bin/{} -f
 
 rustup default stable
+
+cmp ./init_bak /sbin/init || echo "HOLY S*** YOU DELETED SYSTEMD AGAIN YOU DUMB F#\$*" >> ERROR.txt
 
 cd -

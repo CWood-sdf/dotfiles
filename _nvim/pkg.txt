@@ -1,1 +1,1 @@
-bob
+bob ripgrep fd cmake
