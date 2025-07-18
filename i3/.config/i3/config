@@ -86,7 +86,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 bindsym $mod+Shift+greater move workspace to output right
 bindsym $mod+Shift+less move workspace to output left
 
-bindsym $mod+Shift+s exec --no-startup-id bash /usr/bin/screenshot_drag
+bindsym $mod+Shift+s exec --no-startup-id bash /usr/bin/screenshot_drag2
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod

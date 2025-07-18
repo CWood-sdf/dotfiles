@@ -1,0 +1,13 @@
+#!/bin/bash
+
+TIME=$(upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep "time to empty" | tr " " "\n" | tail -n 2 | head -n 1 | tr -d ".")
+
+HOURS=$(echo $TIME/10 | bc)
+
+DECIMALHOURS=$(echo "($TIME - $HOURS * 10)" | bc)
+
+MINUTES=$(echo "$DECIMALHOURS * 6" | bc)
+
+MINUTESTR=$(printf "%02d" "$MINUTES")
+
+echo "$HOURS:$MINUTESTR"

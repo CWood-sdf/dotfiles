@@ -6,8 +6,10 @@
   "WINDOW_BOUNDS": {
     "x": 1,
     "y": 27,
-    "width": 1918,
+    "width": 958,
     "height": 1052
   },
-  "MINIMIZE_TO_TRAY": false
+  "MINIMIZE_TO_TRAY": false,
+  "BACKGROUND_COLOR": "#121214",
+  "offloadAdmControls": false
 }

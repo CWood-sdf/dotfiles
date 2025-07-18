@@ -121,7 +121,7 @@ elif [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
 
-export PATH="~/.local/share/bob/nvim-bin:$PATH:~/.cargo/bin:~/scripts"
+export PATH="~/.local/share/bob/nvim-bin:$PATH:~/.cargo/bin:~/scripts:~/.nix-profile/bin"
 
 
 
@@ -136,6 +136,8 @@ PERL_MM_OPT="INSTALL_BASE=/home/christopher-wood/perl5"; export PERL_MM_OPT;
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
+export PATH="~/.local/share/gem/ruby/3.4.0/bin:$PATH"
+
 # export PS1="\e[6 q\2"
 # export PS0="\e[2 q\2"
 
@@ -146,3 +148,9 @@ alias ardu=arduino-cli
 [ -f "/home/christopher-wood/.ghcup/env" ] && . "/home/christopher-wood/.ghcup/env" # ghcup-envexport LD_LIBRARY_PATH=/home/christopher-wood/.local/lib/arch-mojo:$LD_LIBRARY_PATH
 
 alias ts=tree-sitter
+
+alias bt=bluetui
+
+export PATH="~/projects/UV360/UV360/dotnet-sdk:$PATH:$HOME/dotnet-sdk"
+
+alias luamake="'/home/christopher-wood/projects/lua-debug/luamake/luamake'"
