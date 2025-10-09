@@ -5,9 +5,15 @@ font-family = Hack Nerd Font
 
 shell-integration = bash
 
-theme = tokyonight
+theme = TokyoNight
 
 gtk-titlebar = false
+
+gtk-single-instance = true
+
+gtk-tabs-location = top
+
+gtk-wide-tabs = false
 
 # keybind = ctrl+b=new_split:right
 

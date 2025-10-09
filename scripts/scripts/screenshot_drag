@@ -1,3 +1,3 @@
 #!/bin/bash
 
-maim -s -o "$HOME/Pictures/Screenshots/maim-$(date +'%Y_%m_%d-%I_%M').jpg"
+maim -s -o "$HOME/Pictures/Screenshots/maim-$(date +'%Y_%m_%d-%H_%M_%S').jpg"

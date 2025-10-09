@@ -17,3 +17,5 @@ rustup default stable
 cmp ./init_bak /sbin/init || echo "HOLY S*** YOU DELETED SYSTEMD AGAIN YOU DUMB F#\$*" >> ERROR.txt
 
 cd -
+
+mkdir -p ~/Pictures/Screenshots
